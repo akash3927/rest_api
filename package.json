@@ -1,0 +1,28 @@
+{
+	"name": "rest_api",
+	"version": "1.0.0",
+	"description": "this is rest api with crud operations get, post, put, patch, delete using nodejs, mongodb, expressjs",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/akash3927/rest_api.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/akash3927/rest_api/issues"
+	},
+	"homepage": "https://github.com/akash3927/rest_api#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^6.0.11"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.13"
+	}
+}
