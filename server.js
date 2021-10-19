@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.port || 7000;
+const conn = require('./src/db/conn');
 
 app.use(express.json());
 app.get('/', (req, res) => {
