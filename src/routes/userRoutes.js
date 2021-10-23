@@ -20,11 +20,21 @@ router.post('/newuser', async (req, res) => {
 
 router.patch('/updatedUser/:id', async (req, res) => {
 	try {
-		const _id = req.params.id;
-		const getUser = await user.findByIdAndUpdate(_id, req.body);
+		const id = req.params.id;
+		const getUser = await user.findOneAndUpdate(id, req.body);
 		res.send(getUser);
 	} catch (error) {
 		res.status(500).send(error);
+	}
+});
+
+router.delete('/deleteUser/:id', async (req, res) => {
+	try {
+		// const id = req.params.id
+		const deleteUser = await user.findOneAndDelete(req.params.id);
+		res.send(deleteUser);
+	} catch (error) {
+		res.send(e);
 	}
 });
 
